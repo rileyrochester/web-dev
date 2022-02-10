@@ -1,3 +1,5 @@
+Tuiter: a social media that allows folks to yell at each other and cancel each other. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
