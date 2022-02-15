@@ -1,0 +1,174 @@
+body {
+    background-color: black;
+    font: 15px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-rounded-corners-all-around {
+    border-radius: 50px;
+}
+
+.wd-bg-color-darkgray {
+    background-color: darkgray;
+}
+
+.wd-text-color-white {
+    color: white;
+}
+
+.wd-text-color-lightgrey {
+    color: lightgrey;
+}
+
+.wd-text-color-darkgrey {
+    color: rgb(110, 118, 125);
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.wd-active-blue {
+    color: rgb(29,161,242);
+}
+
+.wd-color-red {
+    color: rgb(249, 24, 128);
+}
+
+.wd-spacer {
+    width: 88px;
+}
+
+.wd-border-gray {
+    border-color: rgb(47, 51, 54)
+}
+
+.wd-margin-0 {
+    margin: 0;
+}
+
+.float-done {
+    clear: both;
+}
+
+.wd-page-container {
+    max-width: 600px;
+    margin-right: 0px;
+    margin-left: 0px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    z-index: 1;
+    width: 100%;
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
+    -webkit-box-align: stretch;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    align-items: stretch;
+    /*border: 0 solid black;*/
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-bottom: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.wd-header {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    z-index: 3;
+    user-select: none;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    border: 0 solid black;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin: 0px;
+    min-height: 0px;
+    min-width: 0px;
+    padding: 0px;
+    position: relative;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.wd-header-space-block {
+    min-width: 36px;
+    min-height: 36px;
+    position: absolute;
+    border-radius: 9999px;
+
+    -webkit-box-align: stretch;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    align-items: stretch;
+    border: 0 solid black;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    z-index: 0;
+    margin: 0px;
+}
+
+.wd-feed {
+    padding: 0;
+}
+
+.wd-button-name:active, .wd-button-name:hover, #for-you {
+    border-bottom: 2px solid rgb(29,161,242);
+    color: rgb(29,161,242);
+    padding: 16px 0px;
+    margin: 0px 16px;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    display: inline;
+    -webkit-box-direction: normal;
+    list-style: none;
+    -webkit-text-size-adjust: 100%;
+    text-decoration: none;
+}
+
+.wd-button-name {
+    border-bottom: 2px solid rgb(110, 118, 125);
+    color: rgb(110, 118, 125);
+    padding: 16px 0px;
+    margin: 0px 16px;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    display: inline;
+    -webkit-box-direction: normal;
+    list-style: none;
+    -webkit-text-size-adjust: 100%;
+    text-decoration: none;
+}
+
+.wd-cx-post-content {
+    color: rgb(217, 217, 217);
+    margin-right: 12px;
+    flex: 1;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    align-items: stretch;
+    border: 0 solid black;
+    box-sizing: border-box;
+    display: flex;
+    max-width: 506px;
+}
+.wd-cx-post-img img{
+    border-radius: 30px;
+}
