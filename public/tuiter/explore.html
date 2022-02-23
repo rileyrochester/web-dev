@@ -12,19 +12,15 @@
 
 <body>
 
-<div class="row wd-5px-margin-top">
-    <!--- header --->
-    <div class="col">
-        <div class="wd-header-space-block">
-            <span></span>
-        </div>
-        <header role="banner" class="wd-header">
-            <div class="wd-spacer">
-                <span></span>
-            </div>
+<div class="container wd-5px-margin">
+    <div class="row">
+
+        <!--- header third --->
+        <div class="col pos-relative wd-24px-margin-right">
+
             <!--- button block menu bar --->
-            <div>
-                <nav class="btn-group-vertical" id="navigation-bar">
+            <div class="pos-absolute top-0 end-0">
+                <nav class="btn-group-vertical float-end" id="navigation-bar">
 
                     <button class="btn btn-block bs-btn-override">
                         <a href="navigation.html">
@@ -33,7 +29,6 @@
                             </div>
                         </a>
                     </button>
-
 
                     <button class="btn btn-block bs-btn-override">
                         <a href="home.html">
@@ -123,13 +118,12 @@
 
             </div>
 
-        </header>
-    </div>
+        </div>
 
-    <!--- body --->
-    <div class="col">
-        <div class="wd-search-form-container">
-            <!---<div class="wd-search-form">--->
+        <!--- body third --->
+        <div class="col">
+            <div class="wd-search-form-container">
+                <!---<div class="wd-search-form">--->
                 <form class="wd-search-form wd-rounded-corners-all-around"
                       id="search-tuiter" role="search" action="#" aria-label="Search Tuiter">
                     <div>
@@ -146,172 +140,324 @@
                         </label>
                     </div>
                 </form>
-            <!---</div>--->
+                <!---</div>--->
 
-            <div class="wd-settings-container">
-                <a href="explore-settings.html" aria-label="Settings" role="link">
-                    <div>
-                        <i class="fas fa-cog"></i>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <!--- bar of hyperlinks --->
-        <div class="wd-hyps-container">
-            <ul class="nav nav-tabs" style="width:100%">
-                <li class="nav-item"><a href="#" class="nav-link active ">For You</a></li>
-                <li class="nav-item"><a href="#" class="nav-link ">Trending</a></li>
-                <li class="nav-item"><a href="#" class="nav-link ">News</a></li>
-                <li class="nav-item"><a href="#" class="nav-link ">Sports</a></li>
-                <li class="nav-item"><a href="#" class="nav-link ">Entertainment</a></li>
-            </ul>
-        </div>
-
-        <div class="wd-suggested-posts-container">
-            <ul>
-                <!--- a default suggested tuit will have a topic, title, and number of tuits --->
-                <li class="wd-suggested-post wd-padding-0">
-                    <div class="wd-post-as-image" role="link">
+                <div class="wd-settings-container">
+                    <a href="explore-settings.html" aria-label="Settings" role="link">
                         <div>
-                            <span>SpaceX's Starship</span>
+                            <i class="fas fa-cog"></i>
                         </div>
-                    </div>
-                </li>
-
-                <li class="wd-suggested-post">
-                    <div class="wd-post-with-img-container">
-                        <div class="wd-cx-post-content">
-                            <p class="wd-trending-topic">Web Development</p>
-                            <div class="row wd-12-padding-left">
-                                <p class="col-md-auto wd-trending-title">
-                                    ReactJS
-                                    <i class="fas fa-check-circle"></i>
-                                </p>
-                                <p class="col wd-trending-topic">
-                                    &nbsp- 2h
-                                </p>
-                            </div>
-                            <p class="wd-trending-title">React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</p>
-                        </div>
-                        <div class="wd-cx-post-img">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIzoQnPVF9HZuXERhwq4IddCJs5Cfi9m3hyA&usqp=CAU"
-                                 height="100px"
-                                 width="100px"/>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="wd-suggested-post">
-                    <div class="wd-post-with-img-container">
-                        <div class="wd-cx-post-content">
-                            <div class="row wd-12-padding-left">
-                                <p class="col-md-auto wd-trending-title">
-                                    JavaScript
-                                    <i class="fas fa-check-circle"></i>
-                                </p>
-                                <p class="col wd-trending-topic">
-                                    &nbsp- 2h
-                                </p>
-                            </div>
-                            <p class="wd-trending-title">JavaScript is a programming language that can run on browsers as well as desktops</p>
-                            <p class="wd-trending-topic">700K Tuits</p>
-                        </div>
-                        <div class="wd-cx-post-img">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-                                 height="100px"
-                                 width="100px"/>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="wd-suggested-post">
-                    <div class="wd-post-with-img-container">
-                        <div class="wd-cx-post-content">
-                            <p class="wd-trending-topic">Web Development</p>
-                            <p class="wd-trending-title">jQuery</p>
-                            <p class="wd-trending-topic">123K Tuits</p>
-                        </div>
-                        <div class="wd-cx-post-img">
-                            <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/092011/jquery.png?itok=Yh7GpHmE"
-                                 height="100px"
-                                 width="100px"/>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="wd-suggested-post">
-                    <div class="wd-post-with-img-container">
-                        <div class="wd-cx-post-content">
-                            <p class="wd-trending-topic">Web Development</p>
-                            <div class="row wd-12-padding-left">
-                                <p class="col-md-auto wd-trending-title">
-                                    NodeJS
-                                    <i class="fas fa-check-circle"></i>
-                                </p>
-                                <p class="col wd-trending-topic">
-                                    &nbsp- 2h
-                                </p>
-                            </div>
-                            <p class="wd-trending-topic">123K Tuits</p>
-                        </div>
-                        <div class="wd-cx-post-img">
-                            <img src="https://i1.sndcdn.com/artworks-000102510409-ifa0zk-t500x500.jpg"
-                                 height="100px"
-                                 width="100px"/>
-                        </div>
-                    </div>
-                </li>
-
-
-            </ul>
-        </div>
-
-    </div>
-
-    <!--- who to follow --->
-    <div class="col">
-        <div>
-            <div>
-                Who to follow
+                    </a>
+                </div>
             </div>
 
-            <div class="btn btn-block bs-btn-override">
-                <a href="#">
-                    <div class="wd-post-container">
-                        <div class="wd-avatar">
-                            <img src="imgs/tuiteruser2.png"
-                                 height="48px"
-                                 width="48px"/>
-                        </div>
-                    </div>
-                    <div class="wd-cx-post-content">
-                        <div class="wd-post-name-bar">
+            <!--- bar of hyperlinks --->
+            <div class="wd-hyps-container">
+                <ul class="nav nav-tabs" style="width:100%">
+                    <li class="nav-item"><a href="#" class="nav-link active ">For You</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link ">Trending</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link ">News</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link ">Sports</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link ">Entertainment</a></li>
+                </ul>
+            </div>
+
+            <div class="wd-suggested-posts-container">
+                <ul>
+                    <!--- a default suggested tuit will have a topic, title, and number of tuits --->
+                    <li class="wd-suggested-post wd-padding-0">
+                        <div class="wd-post-as-image" role="link">
                             <div>
-                                <p class="wd-inpost-name">
-                                    John P. Ruggles
-                                </p>
-
-                                <p class="wd-inpost-handle">
-                                    @WebDev ∙ 9h
-                                </p>
+                                <span>SpaceX's Starship</span>
                             </div>
-
-                            <button class="btn btn-block btn-primary col-xxl-12 mt-2 wd-tweet-btn">
-                                <a href="tuit.html">
-                                    <div class="wd-text-color-white">
-                                        Follow
-                                    </div>
-                                </a>
-                            </button>
                         </div>
-                    </div>
-                </a>
+                    </li>
+
+                    <li class="wd-suggested-post">
+                        <div class="wd-post-with-img-container">
+                            <div class="wd-cx-post-content">
+                                <p class="wd-trending-topic">Web Development</p>
+                                <div class="row wd-12-padding-left">
+                                    <p class="col-md-auto wd-trending-title">
+                                        ReactJS
+                                        <i class="fas fa-check-circle"></i>
+                                    </p>
+                                    <p class="col wd-trending-topic">
+                                        &nbsp- 2h
+                                    </p>
+                                </div>
+                                <p class="wd-trending-title">React.js is a component based front end library that makes
+                                    it
+                                    very easy to build Single Page Applications or SPAs</p>
+                            </div>
+                            <div class="wd-cx-post-img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIzoQnPVF9HZuXERhwq4IddCJs5Cfi9m3hyA&usqp=CAU"
+                                     height="100px"
+                                     width="100px"/>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="wd-suggested-post">
+                        <div class="wd-post-with-img-container">
+                            <div class="wd-cx-post-content">
+                                <div class="row wd-12-padding-left">
+                                    <p class="col-md-auto wd-trending-title">
+                                        JavaScript
+                                        <i class="fas fa-check-circle"></i>
+                                    </p>
+                                    <p class="col wd-trending-topic">
+                                        &nbsp- 2h
+                                    </p>
+                                </div>
+                                <p class="wd-trending-title">JavaScript is a programming language that can run on
+                                    browsers
+                                    as well as desktops</p>
+                                <p class="wd-trending-topic">700K Tuits</p>
+                            </div>
+                            <div class="wd-cx-post-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                                     height="100px"
+                                     width="100px"/>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="wd-suggested-post">
+                        <div class="wd-post-with-img-container">
+                            <div class="wd-cx-post-content">
+                                <p class="wd-trending-topic">Web Development</p>
+                                <p class="wd-trending-title">jQuery</p>
+                                <p class="wd-trending-topic">123K Tuits</p>
+                            </div>
+                            <div class="wd-cx-post-img">
+                                <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/092011/jquery.png?itok=Yh7GpHmE"
+                                     height="100px"
+                                     width="100px"/>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="wd-suggested-post">
+                        <div class="wd-post-with-img-container">
+                            <div class="wd-cx-post-content">
+                                <p class="wd-trending-topic">Web Development</p>
+                                <div class="row wd-12-padding-left">
+                                    <p class="col-md-auto wd-trending-title">
+                                        NodeJS
+                                        <i class="fas fa-check-circle"></i>
+                                    </p>
+                                    <p class="col wd-trending-topic">
+                                        &nbsp- 2h
+                                    </p>
+                                </div>
+                                <p class="wd-trending-topic">123K Tuits</p>
+                            </div>
+                            <div class="wd-cx-post-img">
+                                <img src="https://i1.sndcdn.com/artworks-000102510409-ifa0zk-t500x500.jpg"
+                                     height="100px"
+                                     width="100px"/>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
             </div>
         </div>
-    </div>
 
+        <!--- who to follow third --->
+        <div class="col">
+            <!--- who to follow sidebar --->
+            <div class="container wd-margin-0 wd-suggested-sidebar">
+                <div class="row wd-border">
+                    <p style="margin:12px 0;">Who to follow</p>
+                </div>
+                <!--- suggestion 1 --->
+                <div class="row wd-border">
+                    <div class="container">
+                        <!--- <a href="#"> --->
+                        <div class="row">
+
+                            <div class="col-2 wd-suggestion-avatar">
+                                <img src="https://i.pinimg.com/originals/79/5e/bb/795ebb5f4a470cd7242136237f61fc53.png"
+                                     height="48px"
+                                     width="48px"/>
+                            </div>
+
+                            <div class="col-6 align-self-center">
+                                <div>
+                                    <p class="wd-inpost-name">
+                                        Java
+                                        <i class="fas fa-check-circle"></i>
+                                    </p>
+                                    <p class="row wd-suggestion-handle">@Java</p>
+                                </div>
+                            </div>
+
+                            <div class="col-4 align-self-center wd-follow-btn">
+                                <button class="btn btn-primary wd-tweet-btn">
+                                    <a href="tuit.html">
+                                        <div class="wd-text-color-white">
+                                            Follow
+                                        </div>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        <!--- </a> --->
+                    </div>
+                </div>
+
+                <!--- suggestion 2 --->
+                <div class="row wd-border">
+                    <div class="container">
+                        <!--- <a href="#"> --->
+                        <div class="row">
+
+                            <div class="col-2 wd-suggestion-avatar">
+                                <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy"
+                                     height="48px"
+                                     width="48px"/>
+                            </div>
+
+                            <div class="col-6 align-self-center">
+                                <div>
+                                    <p class="wd-inpost-name">
+                                        Relativity Space
+                                        <i class="fas fa-check-circle"></i>
+                                    </p>
+                                    <p class="row wd-suggestion-handle">@relativityspace</p>
+                                </div>
+                            </div>
+
+                            <div class="col-4 align-self-center wd-follow-btn">
+                                <button class="btn btn-primary wd-tweet-btn">
+                                    <a href="tuit.html">
+                                        <div class="wd-text-color-white">
+                                            Follow
+                                        </div>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        <!--- </a> --->
+                    </div>
+                </div>
+
+                <!--- suggestion 3 --->
+                <div class="row wd-border">
+                    <div class="container">
+                        <!--- <a href="#"> --->
+                        <div class="row">
+
+                            <div class="col-2 wd-suggestion-avatar">
+                                <img src="https://cdn.worldvectorlogo.com/logos/virgin-1.svg"
+                                     height="48px"
+                                     width="48px"/>
+                            </div>
+
+                            <div class="col-6 align-self-center">
+                                <div>
+                                    <p class="wd-inpost-name">
+                                        Virgin Galactic
+                                        <i class="fas fa-check-circle"></i>
+                                    </p>
+                                    <p class="row wd-suggestion-handle">@virgingalactic</p>
+                                </div>
+                            </div>
+
+                            <div class="col-4 align-self-center wd-follow-btn">
+                                <button class="btn btn-primary wd-tweet-btn">
+                                    <a href="tuit.html">
+                                        <div class="wd-text-color-white">
+                                            Follow
+                                        </div>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        <!--- </a> --->
+                    </div>
+                </div>
+
+                <!--- suggestion 4 --->
+                <div class="row wd-border">
+                    <div class="container">
+                        <!--- <a href="#"> --->
+                        <div class="row">
+
+                            <div class="col-2 wd-suggestion-avatar">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png"
+                                     height="48px"
+                                     width="48px"/>
+                            </div>
+
+                            <div class="col-6 align-self-center">
+                                <div>
+                                    <p class="wd-inpost-name">
+                                        NASA
+                                        <i class="fas fa-check-circle"></i>
+                                    </p>
+                                    <p class="row wd-suggestion-handle">@NASA</p>
+                                </div>
+                            </div>
+
+                            <div class="col-4 align-self-center wd-follow-btn">
+                                <button class="btn btn-primary wd-tweet-btn">
+                                    <a href="tuit.html">
+                                        <div class="wd-text-color-white">
+                                            Follow
+                                        </div>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        <!--- </a> --->
+                    </div>
+                </div>
+
+                <!--- suggestion 5 --->
+                <div class="row wd-border">
+                    <div class="container">
+                        <!--- <a href="#"> --->
+                        <div class="row">
+
+                            <div class="col-2 wd-suggestion-avatar">
+                                <img src="https://www.kindpng.com/picc/m/766-7661223_tesla-logo-motors-png-vector-tesla-logo-png.png"
+                                     height="48px"
+                                     width="48px"/>
+                            </div>
+
+                            <div class="col-6 align-self-center">
+                                <div>
+                                    <p class="wd-inpost-name">
+                                        Tesla
+                                        <i class="fas fa-check-circle"></i>
+                                    </p>
+                                    <p class="row wd-suggestion-handle">@Tesla</p>
+                                </div>
+                            </div>
+
+                            <div class="col-4 align-self-center wd-follow-btn">
+                                <button class="btn btn-primary wd-tweet-btn">
+                                    <a href="tuit.html">
+                                        <div class="wd-text-color-white">
+                                            Follow
+                                        </div>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        <!--- </a> --->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 </div>
+
 
 </body>
 </html>

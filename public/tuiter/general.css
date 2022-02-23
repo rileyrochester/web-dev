@@ -28,6 +28,10 @@ body {
     position: relative;
 }
 
+.pos-absolute {
+    position: absolute;
+}
+
 .wd-active-blue {
     color: rgb(29,161,242);
 }
@@ -52,12 +56,27 @@ body {
     clear: both;
 }
 
-.wd-5px-margin-top {
-    margin-top: 5px;
+.wd-5px-margin {
+    margin: 5px;
+    padding: 0;
+}
+
+.wd-24px-margin-right {
+    margin-right: 24px;
 }
 
 .wd-12-padding-left {
     padding-left: 12px;
+}
+
+.wd-flex {
+    display: flex;
+}
+
+.wd-border{
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(239, 243, 244);
 }
 
 .wd-page-container {
@@ -153,13 +172,6 @@ body {
 
 
 
-
-
-
-
-
-
-
 .wd-feed {
     padding: 0;
 }
@@ -208,4 +220,10 @@ body {
 }
 .wd-cx-post-img img{
     border-radius: 30px;
+}
+
+.wd-follow-btn {
+    width: 77px;
+    font-size: 14px;
+    padding: 0;
 }

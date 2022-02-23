@@ -151,7 +151,36 @@ body {
 
 
 
+.wd-suggested-sidebar {
+    width: 348px;
+}
 
+.wd-suggestion-handle {
+    color: rgb(110, 118, 125);
+    margin: 0;
+    height: 20px;
+}
+
+.wd-suggestion-avatar {
+    display: flex;
+    flex-basis: 48px;
+    margin: 5px;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: relative;
+}
+
+
+.wd-suggestion-avatar img{
+    border-radius: 30px;
+}
 
 
 .wd-hyps-container {
@@ -236,7 +265,6 @@ body {
     bottom: 5px;
     left: 16px;
 }
-
 
 
 
