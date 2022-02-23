@@ -3,147 +3,315 @@
 <head>
     <meta charset="UTF-8">
     <title>Explore</title>
-    <link href="general.css" rel="stylesheet"/>
-    <link href="explore.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
+    <link href="general.css" rel="stylesheet"/>
+    <link href="bookmarks.css" rel="stylesheet"/>
+    <link href="explore.css" rel="stylesheet"/>
 </head>
 
 <body>
 
-<div class="wd-page-container">
-    <div class="wd-header-space-block">
-        <span></span>
+<div class="row wd-5px-margin-top">
+    <!--- header --->
+    <div class="col">
+        <div class="wd-header-space-block">
+            <span></span>
+        </div>
+        <header role="banner" class="wd-header">
+            <div class="wd-spacer">
+                <span></span>
+            </div>
+            <!--- button block menu bar --->
+            <div>
+                <nav class="btn-group-vertical" id="navigation-bar">
+
+                    <button class="btn btn-block bs-btn-override">
+                        <a href="navigation.html">
+                            <div>
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                        </a>
+                    </button>
+
+
+                    <button class="btn btn-block bs-btn-override">
+                        <a href="home.html">
+                            <div>
+                                <i class="fas fa-home"></i>
+                                Home
+                            </div>
+                        </a>
+                    </button>
+
+                    <button class="btn btn-block bs-btn-override active">
+                        <a href="explore.html">
+                            <div>
+                                <i class="fas fa-hashtag"></i>
+                                Explore
+                            </div>
+                        </a>
+                    </button>
+
+                    <button class="btn btn-block bs-btn-override">
+                        <a href="notifications.html">
+                            <div>
+                                <i class="fas fa-bell"></i>
+                                Notifications
+                            </div>
+                        </a>
+                    </button>
+
+                    <button class="btn btn-block bs-btn-override">
+                        <a href="messages.html">
+                            <div>
+                                <i class="fas fa-envelope"></i>
+                                Messages
+                            </div>
+                        </a>
+                    </button>
+
+                    <button class="btn btn-block bs-btn-override">
+                        <a href="bookmarks.html">
+                            <div>
+                                <i class="fas fa-bookmark"></i>
+                                Bookmarks
+                            </div>
+                        </a>
+                    </button>
+
+                    <button class="btn btn-block bs-btn-override">
+                        <a href="lists.html">
+                            <div>
+                                <i class="fas fa-list"></i>
+                                Lists
+                            </div>
+                        </a>
+                    </button>
+
+                    <button class="btn btn-block bs-btn-override">
+                        <a href="profile.html">
+                            <div>
+                                <i class="fas fa-user"></i>
+                                Profile
+                            </div>
+                        </a>
+                    </button>
+
+                    <button class="btn btn-block bs-btn-override">
+                        <a href="more.html">
+                            <div>
+                                <span class="fa-stack small">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fas fa-ellipsis-h fa-stack-1x wd-text-color-white"></i>
+                                </span>
+                                More
+                            </div>
+                        </a>
+                    </button>
+                </nav>
+
+                <br/>
+
+                <button class="btn btn-block btn-primary col-xxl-12 mt-2 wd-tweet-btn">
+                    <a href="tuit.html">
+                        <div class="wd-text-color-white">
+                            Tuit
+                        </div>
+                    </a>
+                </button>
+
+            </div>
+
+        </header>
     </div>
-    <header role="banner" class="wd-header">
-        <div class="wd-spacer">
 
-        </div>
-        <!--- menu bar --->
-        <div>
-
-        </div>
-    </header>
-
-    <!--- search bar --->
-    <div class="wd-search-form-container">
-        <div class="wd-search-form">
-            <form class="wd-search-form wd-rounded-corners-all-around wd-text-color-white wd-bg-color-darkgray"
-                  id="search-tuiter" role="search" action="#" aria-label="Search Tuiter">
-                <div>
+    <!--- body --->
+    <div class="col">
+        <div class="wd-search-form-container">
+            <!---<div class="wd-search-form">--->
+                <form class="wd-search-form wd-rounded-corners-all-around"
+                      id="search-tuiter" role="search" action="#" aria-label="Search Tuiter">
                     <div>
+                        <label class="wd-search-box-form-input-label">
+                            <div class="wd-button-container">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <div class="wd-input-container">
+                                <div>
+                                    <input class="wd-search-form-input wd-rounded-corners-all-around"
+                                           id="searchbar-input" type="search" placeholder="Search Tuiter"/>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </form>
+            <!---</div>--->
+
+            <div class="wd-settings-container">
+                <a href="explore-settings.html" aria-label="Settings" role="link">
+                    <div>
+                        <i class="fas fa-cog"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!--- bar of hyperlinks --->
+        <div class="wd-hyps-container">
+            <ul class="nav nav-tabs" style="width:100%">
+                <li class="nav-item"><a href="#" class="nav-link active ">For You</a></li>
+                <li class="nav-item"><a href="#" class="nav-link ">Trending</a></li>
+                <li class="nav-item"><a href="#" class="nav-link ">News</a></li>
+                <li class="nav-item"><a href="#" class="nav-link ">Sports</a></li>
+                <li class="nav-item"><a href="#" class="nav-link ">Entertainment</a></li>
+            </ul>
+        </div>
+
+        <div class="wd-suggested-posts-container">
+            <ul>
+                <!--- a default suggested tuit will have a topic, title, and number of tuits --->
+                <li class="wd-suggested-post wd-padding-0">
+                    <div class="wd-post-as-image" role="link">
                         <div>
-                            <label class="wd-search-box-form-input-label">
-                                <div class="wd-button-container">
-                                    <i class="fa fa-search"></i>
-                                </div>
-                                <div class="wd-input-container">
-                                    <div>
-                                        <input class="wd-search-form-input wd-rounded-corners-all-around wd-text-color-white wd-bg-color-darkgray"
-                                               id="searchbar-input" type="search" placeholder="Search Tuiter"/>
-                                    </div>
-                                </div>
-                            </label>
+                            <span>SpaceX's Starship</span>
                         </div>
                     </div>
-                </div>
-            </form>
+                </li>
+
+                <li class="wd-suggested-post">
+                    <div class="wd-post-with-img-container">
+                        <div class="wd-cx-post-content">
+                            <p class="wd-trending-topic">Web Development</p>
+                            <div class="row wd-12-padding-left">
+                                <p class="col-md-auto wd-trending-title">
+                                    ReactJS
+                                    <i class="fas fa-check-circle"></i>
+                                </p>
+                                <p class="col wd-trending-topic">
+                                    &nbsp- 2h
+                                </p>
+                            </div>
+                            <p class="wd-trending-title">React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</p>
+                        </div>
+                        <div class="wd-cx-post-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIzoQnPVF9HZuXERhwq4IddCJs5Cfi9m3hyA&usqp=CAU"
+                                 height="100px"
+                                 width="100px"/>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="wd-suggested-post">
+                    <div class="wd-post-with-img-container">
+                        <div class="wd-cx-post-content">
+                            <div class="row wd-12-padding-left">
+                                <p class="col-md-auto wd-trending-title">
+                                    JavaScript
+                                    <i class="fas fa-check-circle"></i>
+                                </p>
+                                <p class="col wd-trending-topic">
+                                    &nbsp- 2h
+                                </p>
+                            </div>
+                            <p class="wd-trending-title">JavaScript is a programming language that can run on browsers as well as desktops</p>
+                            <p class="wd-trending-topic">700K Tuits</p>
+                        </div>
+                        <div class="wd-cx-post-img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                                 height="100px"
+                                 width="100px"/>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="wd-suggested-post">
+                    <div class="wd-post-with-img-container">
+                        <div class="wd-cx-post-content">
+                            <p class="wd-trending-topic">Web Development</p>
+                            <p class="wd-trending-title">jQuery</p>
+                            <p class="wd-trending-topic">123K Tuits</p>
+                        </div>
+                        <div class="wd-cx-post-img">
+                            <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/092011/jquery.png?itok=Yh7GpHmE"
+                                 height="100px"
+                                 width="100px"/>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="wd-suggested-post">
+                    <div class="wd-post-with-img-container">
+                        <div class="wd-cx-post-content">
+                            <p class="wd-trending-topic">Web Development</p>
+                            <div class="row wd-12-padding-left">
+                                <p class="col-md-auto wd-trending-title">
+                                    NodeJS
+                                    <i class="fas fa-check-circle"></i>
+                                </p>
+                                <p class="col wd-trending-topic">
+                                    &nbsp- 2h
+                                </p>
+                            </div>
+                            <p class="wd-trending-topic">123K Tuits</p>
+                        </div>
+                        <div class="wd-cx-post-img">
+                            <img src="https://i1.sndcdn.com/artworks-000102510409-ifa0zk-t500x500.jpg"
+                                 height="100px"
+                                 width="100px"/>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
         </div>
 
-        <div class="wd-settings-container">
-            <a href="explore-settings.html" aria-label="Settings" role="link">
-                <div>
-                    <i class="fas fa-cog"></i>
-                </div>
-            </a>
+    </div>
+
+    <!--- who to follow --->
+    <div class="col">
+        <div>
+            <div>
+                Who to follow
+            </div>
+
+            <div class="btn btn-block bs-btn-override">
+                <a href="#">
+                    <div class="wd-post-container">
+                        <div class="wd-avatar">
+                            <img src="imgs/tuiteruser2.png"
+                                 height="48px"
+                                 width="48px"/>
+                        </div>
+                    </div>
+                    <div class="wd-cx-post-content">
+                        <div class="wd-post-name-bar">
+                            <div>
+                                <p class="wd-inpost-name">
+                                    John P. Ruggles
+                                </p>
+
+                                <p class="wd-inpost-handle">
+                                    @WebDev ∙ 9h
+                                </p>
+                            </div>
+
+                            <button class="btn btn-block btn-primary col-xxl-12 mt-2 wd-tweet-btn">
+                                <a href="tuit.html">
+                                    <div class="wd-text-color-white">
+                                        Follow
+                                    </div>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 
-    <!--- bar of hyperlinks --->
-    <div class="wd-hyps-container">
-        <table>
-            <tr>
-                <td><a href="#" class="wd-button-name" id="for-you">For You</a></td>
-                <td><a href="#" class="wd-button-name">Trending</a></td>
-                <td><a href="#" class="wd-button-name">COVID-19</a></td>
-                <td><a href="#" class="wd-button-name">News</a></td>
-                <td><a href="#" class="wd-button-name">Sports</a></td>
-                <td><a href="#" class="wd-button-name">Entertainment</a></td>
-            </tr>
-        </table>
-    </div>
-
-    <div class="wd-suggested-posts-container">
-        <ul>
-            <!--- each suggested tuit will have a topic, title, and number of tuits --->
-
-            <li class="wd-suggested-post">
-                <div class="wd-post-with-img-container">
-                    <div class="wd-cx-post-content">
-                        <p class="wd-trending-topic">Sports ∙ Trending</p>
-                        <p class="wd-trending-title wd-text-color-white">Nathan Chen gets gold</p>
-                        <p class="wd-trending-topic">2.2M Tuits</p>
-                    </div>
-                    <div class="wd-cx-post-img">
-                        <img src="https://pyxis.nymag.com/v1/imgs/069/5d0/35769635196c3be9fd25ebee26760bdc90-nathan-chen.rsquare.w700.jpg"
-                             height="100px"
-                             width="100px"/>
-                    </div>
-                </div>
-            </li>
-
-            <li class="wd-suggested-post">
-                <p class="wd-trending-topic">Trending in Science</p>
-                <p class="wd-trending-title wd-text-color-white">First visible-light images of Venus' surface</p>
-                <p class="wd-trending-topic">55.5K Tuits</p>
-            </li>
-
-            <li class="wd-suggested-post">
-                <p class="wd-trending-topic">Trending in the United States</p>
-                <p class="wd-trending-title wd-text-color-white">POG</p>
-                <p class="wd-trending-topic">55k Tuits</p>
-            </li>
-
-            <li class="wd-suggested-post">
-                <div class="wd-post-with-img-container">
-                    <div class="wd-cx-post-content">
-                        <p class="wd-trending-topic">COVID-19 ∙ LIVE</p>
-                        <p class="wd-trending-title wd-text-color-white">It's Bad, Guys</p>
-                        <p class="wd-trending-topic">700K Tuits</p>
-                    </div>
-                    <div class="wd-cx-post-img">
-                        <img src="https://www.statnews.com/wp-content/uploads/2020/02/Coronavirus-CDC-645x645.jpg"
-                             height="100px"
-                             width="100px"/>
-                    </div>
-                </div>
-            </li>
-
-            <li class="wd-suggested-post">
-                <div class="wd-post-with-img-container">
-                    <div class="wd-cx-post-content">
-                        <p class="wd-trending-topic">
-                            <img src="https://static01.nyt.com/vi-assets/images/share/1200x1200_t.png"
-                                 height="15px"
-                                 width="15px"/>
-                            The New York Times
-                            <i class="fas fa-check-circle"></i>
-                        </p>
-                        <p class="wd-trending-title wd-text-color-white">
-                            Texas sues Facebook's parent, saying collected facial recognition data without consent
-                        </p>
-                        <p class="wd-trending-topic">69K Tuits</p>
-                    </div>
-                    <div class="wd-cx-post-img">
-                        <img src="https://i1.sndcdn.com/artworks-000102510409-ifa0zk-t500x500.jpg"
-                             height="100px"
-                             width="100px"/>
-                    </div>
-                </div>
-            </li>
-
-
-        </ul>
-    </div>
 </div>
+
 </body>
 </html>
