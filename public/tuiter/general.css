@@ -79,6 +79,11 @@ body {
     border-color: rgb(239, 243, 244);
 }
 
+.wd-no-wrap {
+    -0.1:rem!important;
+    white-space: nowrap;
+}
+
 .wd-page-container {
     max-width: 600px;
     margin-right: 0px;
@@ -163,6 +168,11 @@ body {
 .btn.bs-btn-override a{
     text-decoration: none;
     color: rgb(15, 20, 25);
+}
+
+.btn.bs-btn-override.active a, .btn.bs-btn-override a :hover {
+    text-decoration: none;
+    color: white;
 }
 
 .wd-tweet-btn {

@@ -151,6 +151,8 @@
     height: 20px;
     margin: 0;
     text-overflow: ellipsis;
+    -0.1:rem!important;
+    white-space: nowrap;
 }
 
 .wd-inpost-handle {

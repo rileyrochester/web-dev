@@ -12,14 +12,14 @@
 
 <body>
 
-<div class="container wd-5px-margin">
-    <div class="row">
+<div class="container-xxl w-100 wd-5px-margin">
+    <div class="row justify-content-center align-content-around">
 
         <!--- header third --->
-        <div class="col pos-relative wd-24px-margin-right">
+        <div class="col-sm-1 col-md-1 col-lg-2 col-xl-2 col-xxl-2 pos-relative wd-24px-margin-right">
 
             <!--- button block menu bar --->
-            <div class="pos-absolute top-0 end-0">
+            <div class=" pos-absolute top-0 end-0">
                 <nav class="btn-group-vertical float-end" id="navigation-bar">
 
                     <button class="btn btn-block bs-btn-override">
@@ -32,75 +32,102 @@
 
                     <button class="btn btn-block bs-btn-override">
                         <a href="home.html">
-                            <div>
+                            <div class="d-none d-xl-block">
                                 <i class="fas fa-home"></i>
                                 Home
+                            </div>
+                            <div class="d-xl-none">
+                                <i class="fas fa-home"></i>
                             </div>
                         </a>
                     </button>
 
                     <button class="btn btn-block bs-btn-override active">
                         <a href="explore.html">
-                            <div>
+                            <div class="d-none d-xl-block">
                                 <i class="fas fa-hashtag"></i>
                                 Explore
+                            </div>
+                            <div class="d-xl-none">
+                                <i class="fas fa-hashtag"></i>
                             </div>
                         </a>
                     </button>
 
                     <button class="btn btn-block bs-btn-override">
                         <a href="notifications.html">
-                            <div>
+                            <div class="d-none d-xl-block">
                                 <i class="fas fa-bell"></i>
                                 Notifications
+                            </div>
+                            <div class="d-xl-none">
+                                <i class="fas fa-bell"></i>
                             </div>
                         </a>
                     </button>
 
                     <button class="btn btn-block bs-btn-override">
                         <a href="messages.html">
-                            <div>
+                            <div class="d-none d-xl-block">
                                 <i class="fas fa-envelope"></i>
                                 Messages
+                            </div>
+                            <div class="d-xl-none">
+                                <i class="fas fa-envelope"></i>
                             </div>
                         </a>
                     </button>
 
                     <button class="btn btn-block bs-btn-override">
                         <a href="bookmarks.html">
-                            <div>
+                            <div class="d-none d-xl-block">
                                 <i class="fas fa-bookmark"></i>
                                 Bookmarks
+                            </div>
+                            <div class="d-xl-none">
+                                <i class="fas fa-bookmark"></i>
                             </div>
                         </a>
                     </button>
 
                     <button class="btn btn-block bs-btn-override">
                         <a href="lists.html">
-                            <div>
+                            <div class="d-none d-xl-block">
                                 <i class="fas fa-list"></i>
                                 Lists
+                            </div>
+                            <div class="d-xl-none">
+                                <i class="fas fa-list"></i>
                             </div>
                         </a>
                     </button>
 
                     <button class="btn btn-block bs-btn-override">
                         <a href="profile.html">
-                            <div>
+                            <div class="d-none d-xl-block">
                                 <i class="fas fa-user"></i>
                                 Profile
+                            </div>
+                            <div class="d-xl-none">
+                                <i class="fas fa-user"></i>
                             </div>
                         </a>
                     </button>
 
                     <button class="btn btn-block bs-btn-override">
                         <a href="more.html">
-                            <div>
+                            <div class="d-none d-xl-block">
                                 <span class="fa-stack small">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fas fa-ellipsis-h fa-stack-1x wd-text-color-white"></i>
                                 </span>
                                 More
+                            </div>
+                            <div class="d-xl-none">
+                                <span class="fa-stack small">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fas fa-ellipsis-h fa-stack-1x wd-text-color-white"></i>
+                                </span>
                             </div>
                         </a>
                     </button>
@@ -121,7 +148,7 @@
         </div>
 
         <!--- body third --->
-        <div class="col">
+        <div class="col-auto d-block">
             <div class="wd-search-form-container">
                 <!---<div class="wd-search-form">--->
                 <form class="wd-search-form wd-rounded-corners-all-around"
@@ -266,25 +293,28 @@
         </div>
 
         <!--- who to follow third --->
-        <div class="col">
+        <div class="d-none d-lg-block col-lg-1 col-xl-2 col-xxl-3">
+
             <!--- who to follow sidebar --->
-            <div class="container wd-margin-0 wd-suggested-sidebar">
+            <div class="container w-100 wd-margin-0 wd-suggested-sidebar">
+
                 <div class="row wd-border">
-                    <p style="margin:12px 0;">Who to follow</p>
+                    <p class="my-2 wd-inpost-name">Who to follow</p>
                 </div>
+
                 <!--- suggestion 1 --->
-                <div class="row wd-border">
+                <div class="row wd-border flex-nowrap">
                     <div class="container">
                         <!--- <a href="#"> --->
-                        <div class="row">
+                        <div class="row wd-no-wrap flex-nowrap">
 
-                            <div class="col-2 wd-suggestion-avatar">
+                            <div class="col-2 wd-suggestion-avatar overflow-visible">
                                 <img src="https://i.pinimg.com/originals/79/5e/bb/795ebb5f4a470cd7242136237f61fc53.png"
                                      height="48px"
                                      width="48px"/>
                             </div>
 
-                            <div class="col-6 align-self-center">
+                            <div class="col align-self-center overflow-visible" style="z-index:3;">
                                 <div>
                                     <p class="wd-inpost-name">
                                         Java
@@ -294,7 +324,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-4 align-self-center wd-follow-btn">
+                            <div class="col-lg-auto pe-2 overflow-visible align-self-center wd-follow-btn" style="z-index:-1;">
                                 <button class="btn btn-primary wd-tweet-btn">
                                     <a href="tuit.html">
                                         <div class="wd-text-color-white">
@@ -309,28 +339,28 @@
                 </div>
 
                 <!--- suggestion 2 --->
-                <div class="row wd-border">
+                <div class="row wd-border flex-nowrap">
                     <div class="container">
                         <!--- <a href="#"> --->
-                        <div class="row">
+                        <div class="row wd-no-wrap flex-nowrap">
 
-                            <div class="col-2 wd-suggestion-avatar">
+                            <div class="col-2 wd-suggestion-avatar overflow-visible">
                                 <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy"
                                      height="48px"
                                      width="48px"/>
                             </div>
 
-                            <div class="col-6 align-self-center">
+                            <div class="col align-self-center overflow-visible" style="z-index:3;">
                                 <div>
                                     <p class="wd-inpost-name">
                                         Relativity Space
-                                        <i class="fas fa-check-circle"></i>
+                                        <span><i class="fas fa-check-circle"></i></span>
                                     </p>
                                     <p class="row wd-suggestion-handle">@relativityspace</p>
                                 </div>
                             </div>
 
-                            <div class="col-4 align-self-center wd-follow-btn">
+                            <div class="col-md-auto pe-2 overflow-visible align-self-center wd-follow-btn" style="z-index:-1;">
                                 <button class="btn btn-primary wd-tweet-btn">
                                     <a href="tuit.html">
                                         <div class="wd-text-color-white">
@@ -345,18 +375,18 @@
                 </div>
 
                 <!--- suggestion 3 --->
-                <div class="row wd-border">
+                <div class="row wd-border flex-nowrap">
                     <div class="container">
                         <!--- <a href="#"> --->
-                        <div class="row">
+                        <div class="row wd-no-wrap flex-nowrap">
 
-                            <div class="col-2 wd-suggestion-avatar">
+                            <div class="col-2 wd-suggestion-avatar overflow-visible">
                                 <img src="https://cdn.worldvectorlogo.com/logos/virgin-1.svg"
                                      height="48px"
                                      width="48px"/>
                             </div>
 
-                            <div class="col-6 align-self-center">
+                            <div class="col align-self-center overflow-visible" style="z-index:3;">
                                 <div>
                                     <p class="wd-inpost-name">
                                         Virgin Galactic
@@ -366,7 +396,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-4 align-self-center wd-follow-btn">
+                            <div class="col-lg-auto pe-2 overflow-visible align-self-center wd-follow-btn" style="z-index:-1;">
                                 <button class="btn btn-primary wd-tweet-btn">
                                     <a href="tuit.html">
                                         <div class="wd-text-color-white">
@@ -381,18 +411,18 @@
                 </div>
 
                 <!--- suggestion 4 --->
-                <div class="row wd-border">
+                <div class="row wd-border flex-nowrap">
                     <div class="container">
                         <!--- <a href="#"> --->
-                        <div class="row">
+                        <div class="row wd-no-wrap flex-nowrap">
 
-                            <div class="col-2 wd-suggestion-avatar">
+                            <div class="col-2 wd-suggestion-avatar overflow-visible">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png"
                                      height="48px"
                                      width="48px"/>
                             </div>
 
-                            <div class="col-6 align-self-center">
+                            <div class="col align-self-center overflow-visible" style="z-index:3;">
                                 <div>
                                     <p class="wd-inpost-name">
                                         NASA
@@ -402,7 +432,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-4 align-self-center wd-follow-btn">
+                            <div class="col-lg-auto pe-2 overflow-visible align-self-center wd-follow-btn" style="z-index:-1;">
                                 <button class="btn btn-primary wd-tweet-btn">
                                     <a href="tuit.html">
                                         <div class="wd-text-color-white">
@@ -417,18 +447,18 @@
                 </div>
 
                 <!--- suggestion 5 --->
-                <div class="row wd-border">
+                <div class="row wd-border flex-nowrap">
                     <div class="container">
                         <!--- <a href="#"> --->
-                        <div class="row">
+                        <div class="row wd-no-wrap flex-nowrap">
 
-                            <div class="col-2 wd-suggestion-avatar">
+                            <div class="col-2 wd-suggestion-avatar overflow-visible">
                                 <img src="https://www.kindpng.com/picc/m/766-7661223_tesla-logo-motors-png-vector-tesla-logo-png.png"
                                      height="48px"
                                      width="48px"/>
                             </div>
 
-                            <div class="col-6 align-self-center">
+                            <div class="col align-self-center overflow-visible" style="z-index:3;">
                                 <div>
                                     <p class="wd-inpost-name">
                                         Tesla
@@ -438,7 +468,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-4 align-self-center wd-follow-btn">
+                            <div class="col-lg-auto pe-2 overflow-visible align-self-center wd-follow-btn" style="z-index:-1;">
                                 <button class="btn btn-primary wd-tweet-btn">
                                     <a href="tuit.html">
                                         <div class="wd-text-color-white">

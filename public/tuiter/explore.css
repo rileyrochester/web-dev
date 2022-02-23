@@ -152,7 +152,7 @@ body {
 
 
 .wd-suggested-sidebar {
-    width: 348px;
+    max-width: 348px;
 }
 
 .wd-suggestion-handle {
@@ -220,6 +220,7 @@ body {
     border-style: solid;
     border-color: rgb(239, 243, 244);
     list-style: none;
+    max-width: 601px;
 }
 .wd-post-with-img-container {
     -webkit-box-direction: normal;
@@ -269,7 +270,12 @@ body {
 
 
 
-
+.btn-group-vertical#navigation-bar button.active, .btn-group-vertical#navigation-bar button:hover {
+    text-decoration: none;
+    background-color: #0d6efd;
+    color: white;
+    /*background:url(../images/menu_a.jpg) no-repeat center top;*/
+}
 
 
 
