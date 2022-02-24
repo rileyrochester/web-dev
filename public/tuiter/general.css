@@ -65,6 +65,10 @@ body {
     margin-right: 24px;
 }
 
+.wd-24px-margin-left {
+    margin-left: 24px;
+}
+
 .wd-12-padding-left {
     padding-left: 12px;
 }
@@ -236,4 +240,6 @@ body {
     width: 77px;
     font-size: 14px;
     padding: 0;
+    position: absolute;
+    right: 5px;
 }
