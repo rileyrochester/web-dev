@@ -16,7 +16,7 @@
     <div class="row justify-content-center align-content-around">
 
         <!--- header third --->
-        <div class="d-block col-sm-2 col-md-2 col-lg-1 col-xl-2 col-xxl-2 pos-relative wd-24px-margin-right">
+        <div class="d-inline-block col-xs-2 col-sm-2 col-md-2 col-lg-1 col-xl-2 col-xxl-2 pos-relative wd-24px-margin-right">
 
             <!--- button block menu bar --->
             <div class="pos-absolute top-0 end-0">
@@ -148,20 +148,22 @@
         </div>
 
         <!--- body third --->
-        <div class="d-block col-auto">
+        <div class="d-block col-md-auto col-xs-6 col-sm-6">
             <div class="wd-search-form-container">
                 <!---<div class="wd-search-form">--->
                 <form class="wd-search-form wd-rounded-corners-all-around"
                       id="search-tuiter" role="search" action="#" aria-label="Search Tuiter">
-                    <div>
-                        <label class="wd-search-box-form-input-label">
-                            <div class="wd-button-container">
+                    <div class="">
+                        <label class="wd-search-box-form-input-label pos-relative">
+                            <div class="wd-button-container pos-absolute"  style="z-index:1;">
                                 <i class="fa fa-search"></i>
                             </div>
-                            <div class="wd-input-container">
+                            <div class="wd-input-container" style="z-index:20;">
                                 <div>
                                     <input class="wd-search-form-input wd-rounded-corners-all-around"
-                                           id="searchbar-input" type="search" placeholder="Search Tuiter"/>
+                                           id="searchbar-input"
+                                           type="search"
+                                           placeholder="Search Tuiter"/>
                                 </div>
                             </div>
                         </label>
@@ -193,7 +195,12 @@
             <div class="wd-suggested-posts-container w-100">
                 <ul>
                     <li class="wd-suggested-post wd-padding-0">
-                        <div class="wd-post-as-image" role="link">
+                        <div class="wd-post-as-image d-sm-inline-flex" role="link">
+                            <div>
+                                <img src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"
+                                     height="100%"
+                                     width="100%"/>
+                            </div>
                             <div>
                                 <span>SpaceX's Starship</span>
                             </div>
@@ -204,8 +211,8 @@
                         <div class="wd-post-with-img-container">
                             <div class="wd-cx-post-content">
                                 <p class="wd-trending-topic">Web Development</p>
-                                <div class="row wd-12-padding-left">
-                                    <p class="col-md-auto wd-trending-title">
+                                <div class="row wd-12-padding-left flex-nowrap">
+                                    <p class="col-auto wd-trending-title">
                                         ReactJS
                                         <i class="fas fa-check-circle"></i>
                                     </p>
@@ -228,8 +235,8 @@
                     <li class="wd-suggested-post">
                         <div class="wd-post-with-img-container">
                             <div class="wd-cx-post-content">
-                                <div class="row wd-12-padding-left">
-                                    <p class="col-md-auto wd-trending-title">
+                                <div class="row wd-12-padding-left flex-nowrap">
+                                    <p class="col-auto wd-trending-title">
                                         JavaScript
                                         <i class="fas fa-check-circle"></i>
                                     </p>
@@ -252,7 +259,7 @@
 
                     <li class="wd-suggested-post">
                         <div class="wd-post-with-img-container">
-                            <div class="wd-cx-post-content">
+                            <div class="wd-cx-post-content flex-nowrap">
                                 <p class="wd-trending-topic">Web Development</p>
                                 <p class="wd-trending-title">jQuery</p>
                                 <p class="wd-trending-topic">123K Tuits</p>
@@ -269,8 +276,8 @@
                         <div class="wd-post-with-img-container">
                             <div class="wd-cx-post-content">
                                 <p class="wd-trending-topic">Web Development</p>
-                                <div class="row wd-12-padding-left">
-                                    <p class="col-md-auto wd-trending-title">
+                                <div class="row wd-12-padding-left flex-nowrap">
+                                    <p class="col-auto wd-trending-title">
                                         NodeJS
                                         <i class="fas fa-check-circle"></i>
                                     </p>
