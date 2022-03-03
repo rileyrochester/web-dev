@@ -28,12 +28,20 @@ body {
     position: relative;
 }
 
+.pos-absolute {
+    position: absolute;
+}
+
 .wd-active-blue {
     color: rgb(29,161,242);
 }
 
 .wd-color-red {
     color: rgb(249, 24, 128);
+}
+
+.wd-color-black {
+    color: black;
 }
 
 .wd-spacer {
@@ -52,6 +60,38 @@ body {
     clear: both;
 }
 
+.wd-5px-margin {
+    margin: 5px;
+    padding: 0;
+}
+
+.wd-24px-margin-right {
+    margin-right: 24px;
+}
+
+.wd-24px-margin-left {
+    margin-left: 24px;
+}
+
+.wd-12-padding-left {
+    padding-left: 12px;
+}
+
+.wd-flex {
+    display: flex;
+}
+
+.wd-border{
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(239, 243, 244);
+}
+
+.wd-no-wrap {
+    -0.1:rem!important;
+    white-space: nowrap;
+}
+
 .wd-page-container {
     max-width: 600px;
     margin-right: 0px;
@@ -62,7 +102,7 @@ body {
     border-bottom-width: 0;
     z-index: 1;
     width: 100%;
-    border-color: rgb(47, 51, 54);
+    /*border-color: rgb(47, 51, 54);*/
     border-style: solid;
     -webkit-box-align: stretch;
     -webkit-box-direction: normal;
@@ -88,7 +128,7 @@ body {
     user-select: none;
     -webkit-box-direction: normal;
     -webkit-box-orient: vertical;
-    border: 0 solid black;
+    border: 0;
     box-sizing: border-box;
     display: flex;
     flex-basis: auto;
@@ -108,20 +148,47 @@ body {
     min-height: 36px;
     position: absolute;
     border-radius: 9999px;
-
     -webkit-box-align: stretch;
     -webkit-box-direction: normal;
     -webkit-box-orient: vertical;
     align-items: stretch;
-    border: 0 solid black;
+    border: 0;
     box-sizing: border-box;
     display: flex;
     flex-basis: auto;
     flex-direction: column;
     flex-shrink: 0;
     z-index: 0;
-    margin: 0px;
+    margin: 0;
 }
+
+.fa-stack.small {
+    font-size: 0.6em;
+}
+
+.btn.bs-btn-override {
+    border-color: rgb(239, 243, 244);
+    border-width: 1px;
+    border-style: solid;
+    text-align: left;
+}
+
+.btn.bs-btn-override a{
+    text-decoration: none;
+    color: rgb(15, 20, 25);
+}
+
+.btn.bs-btn-override.active a, .btn.bs-btn-override a :hover {
+    text-decoration: none;
+    color: white;
+}
+
+.wd-tweet-btn {
+    border-radius: 30px;
+    right: 10px;
+}
+
+
 
 .wd-feed {
     padding: 0;
@@ -156,7 +223,7 @@ body {
 }
 
 .wd-cx-post-content {
-    color: rgb(217, 217, 217);
+    /*color: rgb(217, 217, 217);*/
     margin-right: 12px;
     flex: 1;
     flex-direction: column;
@@ -164,11 +231,19 @@ body {
     -webkit-box-direction: normal;
     -webkit-box-orient: vertical;
     align-items: stretch;
-    border: 0 solid black;
+    border: 0;
     box-sizing: border-box;
     display: flex;
     max-width: 506px;
 }
 .wd-cx-post-img img{
     border-radius: 30px;
+}
+
+.wd-follow-btn {
+    width: 77px;
+    font-size: 14px;
+    padding: 0;
+    position: absolute;
+    right: 15px;
 }

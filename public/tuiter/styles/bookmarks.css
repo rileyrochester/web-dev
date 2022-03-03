@@ -130,7 +130,7 @@
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
     align-items: stretch;
-    border: 0 solid black;
+    border: 0;
     box-sizing: border-box;
     position: relative;
     justify-content: space-between;
@@ -151,6 +151,8 @@
     height: 20px;
     margin: 0;
     text-overflow: ellipsis;
+    -0.1:rem!important;
+    white-space: nowrap;
 }
 
 .wd-inpost-handle {
