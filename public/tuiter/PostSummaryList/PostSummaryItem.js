@@ -1,6 +1,5 @@
 const PostSummaryItem = (post) => {
     return (`
-    <!---<div class="list-group">--->
         <div class="list-group-item d-flex wd-suggested-post">
             <div class="flex-fill">
                 <p class="wd-trending-topic">${post.topic}</p>
@@ -13,7 +12,6 @@ const PostSummaryItem = (post) => {
             </div>
             <img src="${post.image}" class="wd-suggested-post-img">
         </div>
-    <!---</div>--->
     `);
 }
 
