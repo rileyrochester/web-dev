@@ -256,15 +256,7 @@ body {
     display: flex;
     flex-basis: auto;
     flex-shrink: 1;
-    /*background-image: url(https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg);
-    background-size: 100% auto;*/
     z-index: -1;
-    /*height: 400px;
-    width: 600px;
-    min-height: 100px;
-    min-width: 300px;
-    height: 100%;
-    width: 100%;*/
 }
 
 .wd-post-as-image span{

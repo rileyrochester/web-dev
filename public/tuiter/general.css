@@ -40,6 +40,10 @@ body {
     color: rgb(249, 24, 128);
 }
 
+.wd-color-black {
+    color: black;
+}
+
 .wd-spacer {
     width: 88px;
 }
@@ -181,7 +185,7 @@ body {
 
 .wd-tweet-btn {
     border-radius: 30px;
-    width: 100%;
+    right: 10px;
 }
 
 
@@ -241,5 +245,5 @@ body {
     font-size: 14px;
     padding: 0;
     position: absolute;
-    right: 5px;
+    right: 15px;
 }
