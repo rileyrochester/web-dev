@@ -1,0 +1,63 @@
+.wd-zindex1 {
+    z-index: 1;
+}
+
+.wd-color-black {
+    color: black;
+}
+
+.wd-color-white {
+    color: white;
+}
+
+.wd-suggestion-avatar {
+    display: flex;
+    flex-basis: 48px;
+    margin: 5px;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: relative;
+    border-radius: 30px;
+}
+
+.wd-inpost-name {
+    font-weight: 700;
+    height: 20px;
+    margin: 0;
+    text-overflow: ellipsis;
+    -0.1:rem!important;
+    white-space: nowrap;
+}
+
+.wd-inpost-handle {
+    color: rgb(110, 118, 125);
+    margin: 0;
+    margin-left: 4px;
+    height: 20px;
+}
+
+.wd-suggestion-handle {
+    color: rgb(110, 118, 125);
+    margin: 0;
+    height: 20px;
+}
+
+.wd-follow-btn {
+    width: 77px;
+    font-size: 14px;
+    padding: 0;
+    position: absolute;
+    right: 15px;
+}
+
+.wd-tweet-btn {
+    border-radius: 30px;
+    right: 10px;
+}
