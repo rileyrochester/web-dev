@@ -17,8 +17,8 @@ const WhoToFollowListItem = (
                  width="48px"
                  alt="User Profile Picture"/>
                  
-            <span className="wd-inpost-name align-self-center">
-                <b>{who.userName}</b>
+            <span className="wd-inpost-name ">
+                <b>{who.userName} </b>
                 <i className="fas fa-check-circle"/>
                 <br/>
                 <span className="wd-suggestion-handle">@{who.handle}</span>

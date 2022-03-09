@@ -5,16 +5,15 @@ const ExploreComponent = () => {
     return (
         <div>
             <div className="row">
-               <!-- search field and cog -->
                <div className="wd-search-form-container">
                     <form className="wd-search-form wd-rounded-corners-all-around"
                           id="search-tuiter" role="search" action="#" aria-label="Search Tuiter">
                         <div className="">
                             <label className="wd-search-box-form-input-label pos-relative">
-                                <div className="wd-button-container pos-absolute"  style="z-index:1;">
+                                <div className="wd-button-container pos-absolute"  style={{"z-index":"1"}}>
                                     <i className="fa fa-search"/>
                                 </div>
-                                <div className="wd-input-container" style="z-index:20;">
+                                <div className="wd-input-container" style={{"z-index":"20"}}>
                                     <div>
                                         <input className="wd-search-form-input wd-rounded-corners-all-around"
                                                id="searchbar-input"
@@ -38,7 +37,7 @@ const ExploreComponent = () => {
                
            <div className="row mb-2">
                 <div className="wd-hyps-container w-100">
-                    <ul className="nav nav-tabs" style="width:100%">
+                    <ul className="nav nav-tabs" style={{"width":"100%"}}>
                         <li className="nav-item"><a href="#" className="nav-link active">For You</a></li>
                         <li className="nav-item"><a href="#" className="nav-link ">Trending</a></li>
                         <li className="nav-item"><a href="#" className="nav-link ">News</a></li>
@@ -48,11 +47,9 @@ const ExploreComponent = () => {
                 </div>
            </div>
            
-           <!-- suggested posts -->
            <div className="row">
                <div className="wd-suggested-posts-container list-group wd-list-group-p-override">
                
-                   <!-- image with overlaid text -->
                    <div className="list-group-item wd-suggested-post wd-padding-0">
                         <div className="wd-post-as-image d-sm-inline-flex" role="link">
                             <div>
@@ -67,7 +64,7 @@ const ExploreComponent = () => {
                         </div>
                    </div>
                    
-                   ${PostSummaryList()}
+                   {PostSummaryList()}
                    
                </div>
            </div>
