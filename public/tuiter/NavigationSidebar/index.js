@@ -3,7 +3,7 @@ const NavigationSidebarOld = () => {
             <div class="list-group">
                 <a class="list-group-item list-group-item-action" href="/">
                     <i class="fab fa-twitter fa-fw"></i></a>
-                <a class="list-group-item list-group-item-action" href="../home.html">
+                <a class="list-group-item list-group-item-action" href="/home">
                     <i class="fas fa-home"></i>
                     <span class="d-none d-xl-inline">Home</span>
                 </a>
