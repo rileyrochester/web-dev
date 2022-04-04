@@ -28,6 +28,10 @@ body {
     color: white;
 }
 
+.wd-4px-margin-bottom {
+    margin-bottom: 4px !important;
+}
+
 .wd-4px-margin-left {
     margin-left: 4px !important;
 }
@@ -36,7 +40,13 @@ body {
     border-radius: 50px;
 }
 
+.wd-height-32 {
+    height: 32px;
+}
+
 .wd-suggestion-avatar {
+    height: 48px;
+    width: 48px;
     display: flex;
     flex-basis: 48px;
     margin: 5px;
@@ -155,6 +165,9 @@ body {
     border-radius: 15px;
 }
 
+.wd-max-612 {
+    max-width:612px;
+}
 
 .wd-search-form-container {
     height: 53px;
@@ -291,3 +304,4 @@ body {
 .wd-hyps-container td{
     padding: 0;
 }
+
