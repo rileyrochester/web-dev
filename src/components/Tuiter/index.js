@@ -4,7 +4,7 @@ import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
 //import "./tuiter.css";
 
-import NavigationSidebar from "./NavigationSidebar";
+import NavigationSidebar from "./NavigationSidebar/index";
 import WhoToFollowList from "./WhoToFollowList/index";
 
 import whoReducer from "./reducers/WhoReducer";

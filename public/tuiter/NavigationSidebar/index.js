@@ -1,4 +1,4 @@
-const NavigationSidebar = () => {
+const NavigationSidebarOld = () => {
     return(`
             <div class="list-group">
                 <a class="list-group-item list-group-item-action" href="/">
@@ -47,4 +47,4 @@ const NavigationSidebar = () => {
             </div>
     `);
 }
-export default NavigationSidebar;
+export default NavigationSidebarOld;
