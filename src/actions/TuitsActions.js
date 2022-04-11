@@ -9,32 +9,27 @@ export const createTuit = async (dispatch, tuit) => {
     const newTuit = await service.createTuit(tuit);
     dispatch({
         type: CREATE_TUIT,
-        newTuit
+        newTuit,
     });
-}
-
+};
 export const findAllTuits = async (dispatch) => {
     const tuits = await service.findAllTuits();
     dispatch({
         type: FIND_ALL_TUITS,
-        tuits
+        tuits,
     });
-}
-
+};
 export const updateTuit = async (dispatch, tuit) => {
-    const status = await service.updateTuit(tuit);
+    await service.updateTuit(tuit);
     dispatch({
         type: UPDATE_TUIT,
-        tuit
+        tuit,
     });
-}
-
+};
 export const deleteTuit = async (dispatch, tuit) => {
-    const response = await service.deleteTuit(tuit);
+    await service.deleteTuit(tuit);
     dispatch({
         type: DELETE_TUIT,
-        tuit
-    })
-}
-
-
+        tuit,
+    });
+};

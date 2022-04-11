@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { createTuit } from "../../../actions/TuitsActions";
 
 const WhatsHappening = () => {
-    const [newTuit, setNewTuit] = useState({ tuit: "New tuit" });
+    const [newTuit, setNewTuit] = useState({ tuit: "" });
     const dispatch = useDispatch();
 
     return (
@@ -16,9 +16,9 @@ const WhatsHappening = () => {
                 />
                 <textarea
                     placeholder="What's happening?"
+                    value={newTuit.tuit}
                     className="form-control bg-black wd-textarea wd-darker-gray"
-                    onChange={(e) => setNewTuit({ ...newTuit, tuit: e.target.value })}
-                    style={{color: "white"}}
+                    onChange={(e) => setNewTuit({ ...newTuit, tuit: e.target.value })}                    style={{color: "white"}}
                     />
             </div>
             <div>

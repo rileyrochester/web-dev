@@ -7,12 +7,12 @@ const NavigationSidebar = ({active}) => {
                 <a className="list-group-item list-group-item-action" href="/tuiter">
                     <i className="fab fa-twitter fa-fw"/></a>
                 <a className="list-group-item list-group-item-action" href="/tuiter">
-                    <i className="fas fa-home"></i>
+                    <i className="fas fa-home"/>
                     <span className="d-none d-xl-inline">Home</span>
                 </a>
                 <a className="list-group-item list-group-item-action active" href="/tuiter/explore">
                     <i className="fas fa-hashtag fa-fw"/>
-                    <span class="d-none d-xl-inline">Explore</span>
+                    <span className="d-none d-xl-inline">Explore</span>
                 </a>
                 <a className="list-group-item list-group-item-action" href="../notifications.html">
                     <i className="fas fa-bell fa-fw"/>
