@@ -1,14 +1,10 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import { deleteTuit } from "../../../actions/TuitsActions";
 import TuitStats from "../../TuitStats/tuit-stats";
 
 const TuitListItem = ({ tuit }) => {
     const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        console.log("DELETING");
-        console.log(tuit._id);
-        dispatch({ type: "delete-tuit", tuit });
-    };
 
     return (
         <div>
@@ -22,15 +18,19 @@ const TuitListItem = ({ tuit }) => {
                 <div className="w-100">
                     <div className="mb-1">
                         <div>
-                            <i
-                                onClick={() => deleteTuit(tuit)}
-                                className="fas fa-times fa-pull-right"
-                                />
+                            <i onClick={() => deleteTuit(dispatch, tuit)} className="fas fa-remove fa-pull-right"/>
                             <b>{tuit.postedBy.username}</b>
                             {tuit.verified && <i className="fas fa-check-circle ms-1"/>}
                             <span className="ms-1">@{tuit.handle}</span>
                         </div>
                         {tuit.tuit}
+
+
+                        
+                        {tuit.tweets && <p className="fw-light">{tuit.tweets} Tweets</p>}
+
+
+
                     </div>
                     {tuit.attachments && tuit.attachments.image && (
                         <img

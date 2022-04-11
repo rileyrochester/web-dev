@@ -2,11 +2,8 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
-//import "./tuiter.css";
-
 import NavigationSidebar from "./NavigationSidebar/index";
 import WhoToFollowList from "./WhoToFollowList/index";
-
 import whoReducer from "./reducers/WhoReducer";
 import tuitsReducer from "./reducers/TuitsReducer";
 
