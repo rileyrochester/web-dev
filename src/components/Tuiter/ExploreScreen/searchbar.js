@@ -8,10 +8,10 @@ const searchbar = () => {
                       id="search-tuiter" role="search" action="#" aria-label="Search Tuiter">
                     <div className="">
                         <label className="wd-search-box-form-input-label pos-relative">
-                            <div className="wd-button-container pos-absolute"  style={{"z-index":"1"}}>
+                            <div className="wd-button-container pos-absolute"  style={{"zIndex":"1"}}>
                                 <i className="fa fa-search"/>
                             </div>
-                            <div className="wd-input-container" style={{"z-index":"20"}}>
+                            <div className="wd-input-container" style={{"zIndex":"20"}}>
                                 <div>
                                     <input className="wd-search-form-input wd-rounded-corners-all-around"
                                            id="searchbar-input"

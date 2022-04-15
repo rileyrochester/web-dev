@@ -12,6 +12,7 @@ export const createTuit = async (tuit) => {
 export const findAllTuits = async () => {
     const response = await axios.get(TUITS_API);
     const tuits = response.data;
+    console.log("attempt get all tuits");
     console.log(tuits);
     return tuits;
 };
