@@ -1,5 +1,7 @@
 import axios from "axios";
-const API_BASE = process.env.REACT_APP_API_BASE;
+const API_BASE = process.env.REACT_APP_API_BASE
+    ? process.env.REACT_APP_API_BASE
+    : "http://localhost:4000/api";
 const TUITS_API = `${API_BASE}/tuits`;
 
 export const createTuit = async (tuit) => {
@@ -10,7 +12,6 @@ export const createTuit = async (tuit) => {
 export const findAllTuits = async () => {
     const response = await axios.get(TUITS_API);
     const tuits = response.data;
-    console.log("at tuits service findalltuits");
     console.log(tuits);
     return tuits;
 };
