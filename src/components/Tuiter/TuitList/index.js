@@ -6,7 +6,10 @@ import { findAllTuits } from "../../../actions/TuitsActions";
 const TuitList = () => {
     const tuits = useSelector((state) => state.tuits);
     const dispatch = useDispatch();
+
     useEffect(() => findAllTuits(dispatch), [dispatch]);
+    console.log(tuits);
+
     return (
         <ul className="list-group">
             {tuits.map &&
