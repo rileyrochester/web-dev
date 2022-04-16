@@ -4,23 +4,24 @@ const TUITS_API = `${API_BASE}/tuits`;
 
 export const createTuit = async (tuit) => {
     const response = await axios.post(TUITS_API, tuit);
+    console.log("Create tuit response:", response);
+    console.log("Response data:", response.data);
     return response.data;
 };
 
 export const findAllTuits = async () => {
     const response = await axios.get(TUITS_API);
     const tuits = response.data;
-    console.log("attempt get all tuits");
     console.log(tuits);
     return tuits;
 };
 
-export const updateTuit = async (tuit) => {
-    const response = await axios.put(`${TUITS_API}/${tuit._id}`, tuit);
-    return response.data;
-}
-
 export const deleteTuit = async (tuit) => {
     const response = await axios.delete(`${TUITS_API}/${tuit._id}`);
+    return response.data;
+};
+
+export const updateTuit = async (tuit) => {
+    const response = await axios.put(`${TUITS_API}/${tuit._id}`, tuit);
     return response.data;
 };
